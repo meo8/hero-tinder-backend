@@ -13,7 +13,6 @@ class HerosController < ApplicationController
   end
 
   # Handle strong parameters, so we are secure
-  private
   def hero_params
     params.require(:hero).permit(:name, :age, :super_power, :description)
   end
